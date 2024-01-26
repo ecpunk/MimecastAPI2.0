@@ -72,7 +72,7 @@ This guide includes two JSON files: "Mimecast 2.0.postman_collection.json" and "
 
 ### Automated Threat Management
 #### Scenario
-A cybersecurity team aims to automate monitoring and response to email-based threats using Mimecast's API to quickly identify and take action against potential threats.
+A cybersecurity team aims to automate monitoring and response to email-based threats using Mimecast's API to quickly identify and take action against potential threats, even from 3rd party applications such as SIEM's or SOAR's.
 #### Application
 Utilizing "Threat Management" endpoints, such as `ttp/remediation/search-hash` for identifying threats and `ttp/remediation/create` for automated responses.
 
