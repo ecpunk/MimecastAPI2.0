@@ -7,8 +7,9 @@
 4. [Authentication & Authorization](#authentication--authorization)
 5. [Postman Collection and Environment Configuration](#postman-collection-and-environment-configuration)
 6. [Using the JSON Files with Postman](#using-the-json-files-with-postman)
-7. [Additional Resources](#additional-resources)
+7. [Practical Use Cases](#practical-use-cases)
 8. [API Endpoint Reference](#api-endpoint-reference)
+9. [Additional Resources](#additional-resources)
 
 ## Overview
 This comprehensive guide is designed to assist developers with integrating and interacting with the Mimecast API 2.0. It includes detailed information on authentication processes, along with instructions for using the provided Postman collection and environment.
@@ -67,11 +68,19 @@ This guide includes two JSON files: "Mimecast 2.0.postman_collection.json" and "
 - Send the request to interact with the Mimecast API 2.0.
 - The response will be displayed in Postman, allowing you to verify the results and debug if needed.
 
-## Additional Resources
-For more detailed information and documentation on the Mimecast API 2.0, please visit:
+## Practical Use Cases
 
-- [Mimecast API Overview](https://developer.services.mimecast.com/api-overview)
-- [Mimecast APIs](https://developer.services.mimecast.com/apis)
+### Automated Threat Management
+#### Scenario
+A cybersecurity team aims to automate monitoring and response to email-based threats using Mimecast's API to quickly identify and take action against potential threats.
+#### Application
+Utilizing "Threat Management" endpoints, such as `ttp/remediation/search-hash` for identifying threats and `ttp/remediation/create` for automated responses.
+
+### Compliance and Audit Reporting
+#### Scenario
+An IT compliance officer needs to generate regular audit reports for adherence to email security policies and data protection regulations.
+#### Application
+Using "Audit Events" endpoints like `Get Archive Search Logs` and `Get Audit Events` to gather necessary audit information and ensure compliance.
 
 ## API Endpoint Reference
 
@@ -215,3 +224,8 @@ For more detailed information and documentation on the Mimecast API 2.0, please 
 - user/update-attributes
 - user/update-user
 
+## Additional Resources
+For more detailed information and documentation on the Mimecast API 2.0, please visit:
+
+- [Mimecast API Overview](https://developer.services.mimecast.com/api-overview)
+- [Mimecast APIs](https://developer.services.mimecast.com/apis)
