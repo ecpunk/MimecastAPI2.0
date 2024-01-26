@@ -5,15 +5,8 @@
 2. [What's New in Mimecast API 2.0](#whats-new-in-mimecast-api-20)
 3. [Choosing Between Mimecast API 2.0 and 1.0](#choosing-between-mimecast-api-20-and-10)
 4. [Key API Endpoints](#key-api-endpoints)
-5. [Application Registration and API Credential Management](#application-registration-and-api-credential-management)
-6. [Service Principal Lifecycle Management](#service-principal-lifecycle-management)
-7. [Authentication & Authorization](#authentication--authorization)
-8. [API Response Codes](#api-response-codes)
-9. [API Call Restrictions](#api-call-restrictions)
-10. [Pagination](#pagination)
-11. [Delegate Access](#delegate-access)
-12. [Postman Collection and Environment Configuration](#postman-collection-and-environment-configuration)
-13. [Additional Resources](#additional-resources)
+5. [Postman Collection and Environment Configuration](#postman-collection-and-environment-configuration)
+6. [Additional Resources](#additional-resources)
 
 ## Overview
 This comprehensive guide is designed to assist developers with integrating and interacting with the Mimecast API 2.0. It includes detailed information on API endpoints, application registration, authentication processes, response code interpretations, API call restrictions, pagination handling, and delegate access, along with instructions for using the provided Postman collection and environment.
@@ -42,27 +35,6 @@ Mimecast API 2.0 encompasses a wide range of functionalities through its various
 11. **User and Group Management**: Manages user accounts and group permissions.
 12. **Get Oauth Token**: Endpoint for obtaining OAuth authentication tokens.
 13. **Get Account**: Retrieves account-specific information and settings.
-
-## Application Registration and API Credential Management
-To interact with Mimecast API 2.0, developers must first register their application within the Mimecast portal. This process involves creating and configuring an application to obtain the necessary credentials (Client ID and Client Secret) for authentication.
-
-## Service Principal Lifecycle Management
-Mimecast API 2.0 introduces the concept of service principals, which are automatically created upon application registration. These principals are tied to the application's lifecycle and play a critical role in access management.
-
-## Authentication & Authorization
-After registering an application and obtaining the Client ID and Client Secret, these credentials are used to obtain an access token.
-
-## API Response Codes
-Understanding the API's response codes is key to effective error handling and response interpretation. This section details the various HTTP response codes you might encounter.
-
-## API Call Restrictions
-The Mimecast API implements various restrictions to ensure fair usage and system stability. These include rate limiting, maximum content-length for requests, and limits on historical data queries.
-
-## Pagination
-For endpoints returning lists of data, Mimecast API implements pagination to manage large sets of data efficiently.
-
-## Delegate Access
-This feature allows API requests to be made from one Mimecast account to access resources on another account, provided the appropriate permissions are granted.
 
 ## Postman Collection and Environment Configuration
 ### Environment Variables
