@@ -4,12 +4,14 @@
 1. [Overview](#overview)
 2. [What's New in Mimecast API 2.0](#whats-new-in-mimecast-api-20)
 3. [Choosing Between Mimecast API 2.0 and 1.0](#choosing-between-mimecast-api-20-and-10)
-4. [Key API Endpoints](#key-api-endpoints)
+4. [Authentication & Authorization](#authentication--authorization)
 5. [Postman Collection and Environment Configuration](#postman-collection-and-environment-configuration)
-6. [Additional Resources](#additional-resources)
+6. [Using the JSON Files with Postman](#using-the-json-files-with-postman)
+7. [Additional Resources](#additional-resources)
+8. [API Endpoint Reference](#api-endpoint-reference)
 
 ## Overview
-This comprehensive guide is designed to assist developers with integrating and interacting with the Mimecast API 2.0. It includes detailed information on API endpoints, application registration, authentication processes, response code interpretations, API call restrictions, pagination handling, and delegate access, along with instructions for using the provided Postman collection and environment.
+This comprehensive guide is designed to assist developers with integrating and interacting with the Mimecast API 2.0. It includes detailed information on authentication processes, along with instructions for using the provided Postman collection and environment.
 
 ## What's New in Mimecast API 2.0
 The latest version of Mimecast API introduces enhanced features and improvements over its predecessor. For the most recent updates and changes in API 2.0, users are encouraged to visit the 'What's new' section on the Mimecast documentation site.
@@ -19,22 +21,8 @@ Selecting the appropriate API version is crucial for optimal integration and per
 - **API 2.0** is recommended for new Email Security Cloud Gateway customers, new Email Security Cloud Integrated customers (coming soon), and existing customers seeking access to new capabilities not available in API 1.0.
 - **API 1.0** should continue to be used by existing Email Security Cloud Gateway customers with active integrations, but a migration plan to API 2.0 should be considered.
 
-## Key API Endpoints
-Mimecast API 2.0 encompasses a wide range of functionalities through its various endpoints. The primary endpoints available in the collection include:
-
-1. **Account Management**: Handles all aspects of account settings and configurations.
-2. **Audit Events**: Provides access to audit logs and event tracking.
-3. **Awareness Training**: Manages user training modules and awareness programs.
-4. **Data Retention**: Controls data retention policies and configurations.
-5. **Domain Management**: Enables the management and configuration of email domains.
-6. **Email Security Cloud Gateway**: Specialized endpoint for managing email security settings.
-7. **Policy Management**: Facilitates the creation and management of security and handling policies.
-8. **Security Events**: Tracks and reports on security-related events and incidents.
-9. **Threat Management**: Offers tools for identifying, analyzing, and managing email threats.
-10. **Threats, Security Events, and Data**: A comprehensive endpoint for all threat-related information and data analytics.
-11. **User and Group Management**: Manages user accounts and group permissions.
-12. **Get Oauth Token**: Endpoint for obtaining OAuth authentication tokens.
-13. **Get Account**: Retrieves account-specific information and settings.
+## Authentication & Authorization
+After registering an application and obtaining the Client ID and Client Secret, these credentials are used to obtain an access token. The provided Postman collection includes examples of how to perform this step using different programming languages and tools like cURL, PowerShell, and Python.
 
 ## Postman Collection and Environment Configuration
 ### Environment Variables
@@ -79,12 +67,151 @@ This guide includes two JSON files: "Mimecast 2.0.postman_collection.json" and "
 - Send the request to interact with the Mimecast API 2.0.
 - The response will be displayed in Postman, allowing you to verify the results and debug if needed.
 
-By following these steps, you can effectively utilize the provided JSON files to interact with the Mimecast API 2.0 using Postman. This setup simplifies the process of testing and developing your integrations with Mimecast services.
-
 ## Additional Resources
 For more detailed information and documentation on the Mimecast API 2.0, please visit:
 
 - [Mimecast API Overview](https://developer.services.mimecast.com/api-overview)
 - [Mimecast APIs](https://developer.services.mimecast.com/apis)
 
-This README aims to provide a thorough understanding of the Mimecast API 2.0, equipping developers with the knowledge and tools needed for successful integration and usage.
+## API Endpoint Reference
+
+### Get Oauth Token
+
+### Get Account
+
+### Account Management
+- Get Dashboard Notifications
+- Get Support Info
+- Get Packages
+- Create Config Snapshot
+- Export Config Snapshot
+- List Config Snapshots
+- Restore Config Snapshot
+
+### Audit Events
+- Get Archive Search Logs
+- Get Search Logs
+- Get View Logs
+- Get Audit Events
+- Get Audit Categories
+- Get Held Release Logs
+- Get Rejections
+
+### Awareness Training
+- Get Performance Details
+- Get Performance Summary
+- Get Safe Score Details
+- Get Safe Score Summary
+- Get Watchlist Details
+- Get Watchlist Summary
+- Get Campaign
+- Get User Data
+- Get Queue
+- Get Training Details
+
+### Data Retention
+- Get File
+- Get Message Detail
+- Get Message List
+- Get Message Part
+- Search Archive
+
+### Domain Management
+- Create Domain
+- Delete Pending Domain
+- Get Internal Domain
+- Get Pending Domain
+- Get Provision Status
+- Get Verification Code
+- Verify Domain
+
+### Email Security Cloud Gateway
+- Get Email Queues
+- Send Email
+- File Upload
+- Find Processing Messages
+- Get Hold Message List
+- Get Hold Summary List
+- Hold Reject
+- Hold Release
+- message/get-file
+- journaling/get-service
+- managedsender/permit-or-block-sender
+- message-finder/get-message-info
+- message-finder/search
+- ttp/url/decode-url
+
+### Policy Management
+- address-alteration/create-address-alteration-set
+- address-alteration/create-definition
+- address-alteration/create-policy
+- address-alteration/delete-definition
+- address-alteration/delete-policy
+- address-alteration/get-address-alteration-set
+- address-alteration/get-definition
+- address-alteration/get-policy
+- address-alteration/update-policy
+- antispoofing-bypass/create-policy
+- antispoofing-bypass/delete-policy
+- antispoofing-bypass/get-policy
+- antispoofing-bypass/update-policy
+- blocked-senders/create-policy
+- blockedsenders/get-policy
+- webwhiteurl/create-policy-with-targets
+- webwhiteurl/delete-policy-with-targets
+- webwhiteurl/get-policy-with-targets
+- webwhiteurl/update-policy-with-targets
+- ttp/url/create-managed-url
+- ttp/url/delete-managed-url
+- ttp/url/get-all-managed-urls
+
+### Security Events
+- dlp/get-logs
+- ttp/attachment/get-logs
+- ttp/impersonation/get-logs
+- ttp/url/get-logs
+
+### Threat Management
+- byo-threat-intelligence/create-batch
+- byo-threat-intelligence/delete-batch
+- byo-threat-intelligence/get-batches
+- byo-threat-intelligence/get-quota
+- ttp/remediation/create
+- ttp/remediation/find-incidents
+- ttp/remediation/get-incident
+- ttp/remediation/search-hash
+- ttp/remediation/v2/create
+
+### Threats, Security Events, and Data
+- siem/v1/batch/events/cg
+- siem/v1/events/cg
+- threats/v1/stats/attachment-scans
+- threats/v1/stats/gateway-detections
+- threats/v1/stats/impersonations
+- threats/v1/stats/url-clicks
+
+### User and Group Management
+- directory/add-group-member
+- directory/create-group
+- directory/delete-group
+- directory/execute-sync
+- directory/find-groups
+- directory/get-connection
+- directory/get-group-members
+- directory/remove-group-member
+- directory/update-group
+- user/add-delegate-user
+- user/create-user
+- user/find-delegate-users
+- user/get-aliases
+- user/get-attributes
+- user/get-import-status
+- user/get-internal-users
+- user/get-most-used-contacts
+- user/import-users
+- user/remove-alias
+- user/remove-delegate-user
+- user/update-alias
+- user/update-attributes
+- user/update-user
+
