@@ -142,7 +142,7 @@
 							"raw": "{\n    \"data\": [\n        {\n            \"backupType\": \"your_backup_type_here\",\n            \"comment\": \"your_comment_here\",\n            \"name\": \"your_snapshot_name_here\"\n        }\n    ]\n}"
 						},
 						"url": {
-							"raw": "api.services.mimecast.com/config-snapshot/v1/create",
+							"raw": "https://api.services.mimecast.com/config-snapshot/v1/create",
 							"host": [
 								"api",
 								"services",
@@ -174,7 +174,7 @@
 							"raw": "{\n    \"data\": [\n        {\n            \"exportSource\": \"your_export_source_guid_here\"\n        }\n    ]\n}"
 						},
 						"url": {
-							"raw": "api.services.mimecast.com/config-snapshot/v1/export",
+							"raw": "https://api.services.mimecast.com/config-snapshot/v1/export",
 							"host": [
 								"api",
 								"services",
@@ -206,7 +206,7 @@
 							"raw": "{\n    \"data\": [\n        {\n            \"backupType\": \"your_backup_type_here\"\n        }\n    ]\n}"
 						},
 						"url": {
-							"raw": "api.services.mimecast.com/config-snapshot/v1/list",
+							"raw": "https://api.services.mimecast.com/config-snapshot/v1/list",
 							"host": [
 								"api",
 								"services",
@@ -238,7 +238,7 @@
 							"raw": "{\n    \"data\": [\n        {\n            \"backupType\": \"your_backup_type_here\",\n            \"mode\": \"your_restore_mode_here\",\n            \"restoreSource\": \"your_restore_source_guid_here\",\n            \"scope\": {\n                \"unit\": \"your_scoped_restore_unit_here\",\n                \"value\": [\"your_scoped_restore_value_here\"]\n            }\n        }\n    ]\n}"
 						},
 						"url": {
-							"raw": "api.services.mimecast.com/config-snapshot/v1/restore",
+							"raw": "https://api.services.mimecast.com/config-snapshot/v1/restore",
 							"host": [
 								"api",
 								"services",
@@ -275,7 +275,7 @@
 							"raw": "{\n    \"data\": [\n        {\n            \"query\": \"your_search_query_here\"\n        }\n    ]\n}"
 						},
 						"url": {
-							"raw": "api.services.mimecast.com/api/archive/get-archive-search-logs",
+							"raw": "https://api.services.mimecast.com/api/archive/get-archive-search-logs",
 							"host": [
 								"api",
 								"services",
@@ -307,7 +307,7 @@
 							"raw": "{\n    \"data\": [\n        {\n            \"end\": \"yyyy-MM-dd'T'HH:mm:ssZ\", \n            \"query\": \"your_search_query_here\",\n            \"start\": \"yyyy-MM-dd'T'HH:mm:ssZ\"\n        }\n    ]\n}"
 						},
 						"url": {
-							"raw": "api.services.mimecast.com/api/archive/get-search-logs",
+							"raw": "https://api.services.mimecast.com/api/archive/get-search-logs",
 							"host": [
 								"api",
 								"services",
@@ -339,7 +339,7 @@
 							"raw": "{\n    \"data\": [\n        {\n            \"end\": \"yyyy-MM-dd'T'HH:mm:ssZ\", \n            \"query\": \"your_query_text_here\",\n            \"start\": \"yyyy-MM-dd'T'HH:mm:ssZ\"\n        }\n    ]\n}"
 						},
 						"url": {
-							"raw": "api.services.mimecast.com/api/archive/get-view-logs",
+							"raw": "https://api.services.mimecast.com/api/archive/get-view-logs",
 							"host": [
 								"api",
 								"services",
@@ -371,7 +371,7 @@
 							"raw": "{\n    \"data\": [\n        {\n            \"categories\": [\"category_code_1\", \"category_code_2\"],\n            \"endDateTime\": \"yyyy-MM-dd'T'HH:mm:ssZ\",\n            \"query\": \"your_query_text_here\",\n            \"startDateTime\": \"yyyy-MM-dd'T'HH:mm:ssZ\"\n        }\n    ]\n}"
 						},
 						"url": {
-							"raw": "api.services.mimecast.com/api/audit/get-audit-events",
+							"raw": "https://api.services.mimecast.com/api/audit/get-audit-events",
 							"host": [
 								"api",
 								"services",
@@ -399,7 +399,7 @@
 							}
 						],
 						"url": {
-							"raw": "api.services.mimecast.com/api/audit/get-categories",
+							"raw": "https://api.services.mimecast.com/api/audit/get-categories",
 							"host": [
 								"api",
 								"services",
@@ -431,7 +431,7 @@
 							"raw": "{\n    \"data\": [\n        {\n            \"end\": \"yyyy-MM-dd'T'HH:mm:ssZ\",\n            \"filterBy\": [\n                {\n                    \"searchBy\": {\n                        \"fieldName\": \"your_field_name_here\",\n                        \"value\": \"your_search_value_here\"\n                    }\n                }\n            ],\n            \"start\": \"yyyy-MM-dd'T'HH:mm:ssZ\"\n        }\n    ]\n}"
 						},
 						"url": {
-							"raw": "api.services.mimecast.com/api/gateway/get-held-release-logs",
+							"raw": "https://api.services.mimecast.com/api/gateway/get-held-release-logs",
 							"host": [
 								"api",
 								"services",
@@ -501,7 +501,7 @@
 							"raw": "{\n    \"data\": [\n        {\n            \"attributeIds\": [\"attribute_id_1\", \"attribute_id_2\"],\n            \"filterBy\": [\n                {\n                    \"fieldName\": \"type\",\n                    \"value\": \"video_count_all\"\n                }\n            ],\n            \"includeUserDetails\": false,\n            \"searchBy\": [\n                {\n                    \"attributeId\": \"your_attribute_id_here\",\n                    \"fieldName\": \"your_field_name_here\",\n                    \"value\": \"your_search_value_here\"\n                }\n            ]\n        }\n    ]\n}"
 						},
 						"url": {
-							"raw": "api.services.mimecast.com/api/awareness-training/company/get-performance-details",
+							"raw": "https://api.services.mimecast.com/api/awareness-training/company/get-performance-details",
 							"host": [
 								"api",
 								"services",
@@ -534,7 +534,7 @@
 							"raw": "{}"
 						},
 						"url": {
-							"raw": "api.services.mimecast.com/api/awareness-training/company/get-performance-summary",
+							"raw": "https://api.services.mimecast.com/api/awareness-training/company/get-performance-summary",
 							"host": [
 								"api",
 								"services",
@@ -567,7 +567,7 @@
 							"raw": "{\n    \"data\": [\n        {\n            \"attributeIds\": [\"attribute_id_1\", \"attribute_id_2\", \"attribute_id_3\"],\n            \"filterBy\": [\n                {\n                    \"fieldName\": \"type\",\n                    \"value\": \"A\"\n                }\n            ],\n            \"searchBy\": [\n                {\n                    \"fieldName\": \"your_field_name_here\",\n                    \"value\": \"your_search_value_here\"\n                }\n            ]\n        }\n    ]\n}"
 						},
 						"url": {
-							"raw": "api.services.mimecast.com/api/awareness-training/company/get-safe-score-details",
+							"raw": "https://api.services.mimecast.com/api/awareness-training/company/get-safe-score-details",
 							"host": [
 								"api",
 								"services",
@@ -600,7 +600,7 @@
 							"raw": "{}"
 						},
 						"url": {
-							"raw": "api.services.mimecast.com/api/awareness-training/company/get-safe-score-summary",
+							"raw": "https://api.services.mimecast.com/api/awareness-training/company/get-safe-score-summary",
 							"host": [
 								"api",
 								"services",
@@ -633,7 +633,7 @@
 							"raw": "{\n    \"data\": [\n        {\n            \"attributeIds\": [\"attribute_id_1\", \"attribute_id_2\", \"attribute_id_3\"],\n            \"filterBy\": [\n                {\n                    \"fieldName\": \"type\",\n                    \"value\": \"video_count_1_or_more\"\n                }\n            ],\n            \"searchBy\": [\n                {\n                    \"attributeId\": \"your_attribute_id_here\",\n                    \"fieldName\": \"your_field_name_here\",\n                    \"value\": \"your_search_value_here\"\n                }\n            ]\n        }\n    ]\n}"
 						},
 						"url": {
-							"raw": "api.services.mimecast.com/api/awareness-training/company/get-watchlist-details",
+							"raw": "https://api.services.mimecast.com/api/awareness-training/company/get-watchlist-details",
 							"host": [
 								"api",
 								"services",
@@ -666,7 +666,7 @@
 							"raw": "{}"
 						},
 						"url": {
-							"raw": "api.services.mimecast.com/api/awareness-training/company/get-watchlist-summary",
+							"raw": "https://api.services.mimecast.com/api/awareness-training/company/get-watchlist-summary",
 							"host": [
 								"api",
 								"services",
@@ -699,7 +699,7 @@
 							"raw": "{\n    \"data\": [\n        {\n            \"id\": \"your_campaign_id_here\"\n        }\n    ]\n}"
 						},
 						"url": {
-							"raw": "api.services.mimecast.com/api/awareness-training/phishing/campaign/get-campaign",
+							"raw": "https://api.services.mimecast.com/api/awareness-training/phishing/campaign/get-campaign",
 							"host": [
 								"api",
 								"services",
@@ -733,7 +733,7 @@
 							"raw": "{\n    \"data\": [\n        {\n            \"attributeIds\": [\"attribute_id_1\", \"attribute_id_2\", \"attribute_id_3\"],\n            \"filterBy\": [\n                {\n                    \"fieldName\": \"status\",\n                    \"value\": \"sent\"\n                }\n            ],\n            \"id\": \"your_campaign_id_here\",\n            \"searchBy\": {\n                \"fieldName\": \"your_field_name_here\",\n                \"value\": \"your_search_value_here\"\n            }\n        }\n    ]\n}"
 						},
 						"url": {
-							"raw": "api.services.mimecast.com/api/awareness-training/phishing/campaign/get-user-data",
+							"raw": "https://api.services.mimecast.com/api/awareness-training/phishing/campaign/get-user-data",
 							"host": [
 								"api",
 								"services",
@@ -767,7 +767,7 @@
 							"raw": "{}"
 						},
 						"url": {
-							"raw": "api.services.mimecast.com/api/awareness-training/queue/get-queue",
+							"raw": "https://api.services.mimecast.com/api/awareness-training/queue/get-queue",
 							"host": [
 								"api",
 								"services",
@@ -800,7 +800,7 @@
 							"raw": "{}"
 						},
 						"url": {
-							"raw": "api.services.mimecast.com/api/awareness-training/user/get-training-details",
+							"raw": "https://api.services.mimecast.com/api/awareness-training/user/get-training-details",
 							"host": [
 								"api",
 								"services",
@@ -838,7 +838,7 @@
 							"raw": "{\n    \"data\": [\n        {\n            \"id\": \"your_file_id_here\"\n        }\n    ]\n}"
 						},
 						"url": {
-							"raw": "api.services.mimecast.com/api/archive/get-file",
+							"raw": "https://api.services.mimecast.com/api/archive/get-file",
 							"host": [
 								"api",
 								"services",
@@ -870,7 +870,7 @@
 							"raw": "{\n    \"data\": [\n        {\n            \"id\": \"your_message_id_here\"\n        }\n    ]\n}"
 						},
 						"url": {
-							"raw": "api.services.mimecast.com/api/archive/get-message-detail",
+							"raw": "https://api.services.mimecast.com/api/archive/get-message-detail",
 							"host": [
 								"api",
 								"services",
@@ -902,7 +902,7 @@
 							"raw": "{\n    \"data\": [\n        {\n            \"end\": \"your_end_date_here\",\n            \"includeAliases\": true,\n            \"includeDelegates\": false,\n            \"mailbox\": \"your_email_address_here\",\n            \"start\": \"your_start_date_here\",\n            \"view\": \"your_message_list_type_here\"\n        }\n    ]\n}"
 						},
 						"url": {
-							"raw": "api.services.mimecast.com/api/archive/get-message-list",
+							"raw": "https://api.services.mimecast.com/api/archive/get-message-list",
 							"host": [
 								"api",
 								"services",
@@ -934,7 +934,7 @@
 							"raw": "{\n    \"data\": [\n        {\n            \"context\": \"DELIVERED\",\n            \"extractFromHtml\": true,\n            \"id\": \"your_message_id_here\",\n            \"mailbox\": \"your_email_address_here\",\n            \"stripDangerous\": true,\n            \"stripImg\": false,\n            \"stripStyles\": false,\n            \"transposeInlineCID\": false,\n            \"type\": \"HTML\"\n        }\n    ]\n}"
 						},
 						"url": {
-							"raw": "api.services.mimecast.com/api/archive/get-message-part",
+							"raw": "https://api.services.mimecast.com/api/archive/get-message-part",
 							"host": [
 								"api",
 								"services",
@@ -965,7 +965,7 @@
 							"raw": "{\n    \"data\": [\n        {\n            \"admin\": false,\n            \"query\": \"your_search_query_here\"\n        }\n    ]\n}"
 						},
 						"url": {
-							"raw": "api.services.mimecast.com/api/archive/search",
+							"raw": "https://api.services.mimecast.com/api/archive/search",
 							"host": [
 								"api",
 								"services",
@@ -1002,7 +1002,7 @@
 							"raw": "{\n    \"data\": [\n        {\n            \"domain\": \"your_domain_name_here\",\n            \"inboundType\": \"smtp\"\n        }\n    ]\n}"
 						},
 						"url": {
-							"raw": "api.services.mimecast.com/api/domain/create-domain",
+							"raw": "https://api.services.mimecast.com/api/domain/create-domain",
 							"host": [
 								"api",
 								"services",
@@ -1034,7 +1034,7 @@
 							"raw": "{\n    \"data\": [\n        {\n            \"domain\": \"your_pending_domain_name_here\",\n            \"id\": \"your_domain_id_here\"\n        }\n    ]\n}"
 						},
 						"url": {
-							"raw": "api.services.mimecast.com/api/domain/delete-pending-domain",
+							"raw": "https://api.services.mimecast.com/api/domain/delete-pending-domain",
 							"host": [
 								"api",
 								"services",
@@ -1066,7 +1066,7 @@
 							"raw": "{\n    \"data\": [\n        {\n            \"domain\": \"your_domain_name_here\"\n        }\n    ]\n}"
 						},
 						"url": {
-							"raw": "api.services.mimecast.com/api/domain/get-internal-domain",
+							"raw": "https://api.services.mimecast.com/api/domain/get-internal-domain",
 							"host": [
 								"api",
 								"services",
@@ -1098,7 +1098,7 @@
 							"raw": "{\n    \"data\": [\n        {\n            \"domain\": \"your_domain_name_here\"\n        }\n    ]\n}"
 						},
 						"url": {
-							"raw": "api.services.mimecast.com/api/domain/get-pending-domain",
+							"raw": "https://api.services.mimecast.com/api/domain/get-pending-domain",
 							"host": [
 								"api",
 								"services",
@@ -1130,7 +1130,7 @@
 							"raw": "{\n    \"data\": [\n        {\n            \"domain\": \"your_domain_name_here\"\n        }\n    ]\n}"
 						},
 						"url": {
-							"raw": "api.services.mimecast.com/api/domain/get-provision-status",
+							"raw": "https://api.services.mimecast.com/api/domain/get-provision-status",
 							"host": [
 								"api",
 								"services",
@@ -1162,7 +1162,7 @@
 							"raw": "{\n    \"data\": [\n        {\n            \"domain\": \"your_domain_name_here\"\n        }\n    ]\n}"
 						},
 						"url": {
-							"raw": "api.services.mimecast.com/api/domain/get-verification-code",
+							"raw": "https://api.services.mimecast.com/api/domain/get-verification-code",
 							"host": [
 								"api",
 								"services",
@@ -1194,7 +1194,7 @@
 							"raw": "{\n    \"data\": [\n        {\n            \"domain\": \"your_domain_name_here\",\n            \"inboundType\": \"your_inbound_type_here\"\n        }\n    ]\n}"
 						},
 						"url": {
-							"raw": "api.services.mimecast.com/api/domain/verify-domain",
+							"raw": "https://api.services.mimecast.com/api/domain/verify-domain",
 							"host": [
 								"api",
 								"services",
@@ -1231,7 +1231,7 @@
 							"raw": "{\n    \"data\": [\n        {\n            \"end\": \"your_end_date_here\",\n            \"start\": \"your_start_date_here\"\n        }\n    ]\n}"
 						},
 						"url": {
-							"raw": "api.services.mimecast.com/api/email/get-email-queues",
+							"raw": "https://api.services.mimecast.com/api/email/get-email-queues",
 							"host": [
 								"api",
 								"services",
@@ -1263,7 +1263,7 @@
 							"raw": "{\n    \"data\": [\n        {\n            \"attachments\": [],\n            \"bcc\": [],\n            \"cc\": [],\n            \"extraHeaders\": [],\n            \"from\": {\n                \"displayableName\": \"\",\n                \"emailAddress\": \"your_email_address_here\"\n            },\n            \"htmlBody\": {\n                \"charset\": \"\",\n                \"content\": \"\"\n            },\n            \"plainBody\": {\n                \"charset\": \"\",\n                \"content\": \"\"\n            },\n            \"subject\": \"your_email_subject_here\",\n            \"to\": [\n                {\n                    \"displayableName\": \"\",\n                    \"emailAddress\": \"recipient_email_address_here\"\n                }\n            ]\n        }\n    ]\n}"
 						},
 						"url": {
-							"raw": "api.services.mimecast.com/api/email/send-email",
+							"raw": "https://api.services.mimecast.com/api/email/send-email",
 							"host": [
 								"api",
 								"services",
@@ -1305,7 +1305,7 @@
 							]
 						},
 						"url": {
-							"raw": "api.services.mimecast.com/api/file/file-upload",
+							"raw": "https://api.services.mimecast.com/api/file/file-upload",
 							"host": [
 								"api",
 								"services",
@@ -1342,7 +1342,7 @@
 							]
 						},
 						"url": {
-							"raw": "api.services.mimecast.com/api/gateway/find-processing-messages",
+							"raw": "https://api.services.mimecast.com/api/gateway/find-processing-messages",
 							"host": [
 								"api",
 								"services",
@@ -1379,7 +1379,7 @@
 							]
 						},
 						"url": {
-							"raw": "api.services.mimecast.com/api/gateway/get-hold-message-list",
+							"raw": "https://api.services.mimecast.com/api/gateway/get-hold-message-list",
 							"host": [
 								"api",
 								"services",
@@ -1407,7 +1407,7 @@
 							}
 						],
 						"url": {
-							"raw": "api.services.mimecast.com/api/gateway/get-hold-summary-list",
+							"raw": "https://api.services.mimecast.com/api/gateway/get-hold-summary-list",
 							"host": [
 								"api",
 								"services",
@@ -1439,7 +1439,7 @@
 							"raw": "{\n    \"data\": [\n        {\n            \"ids\": [\"mimecast_secure_id_1\", \"mimecast_secure_id_2\"],\n            \"message\": \"Rejection message here\",\n            \"notify\": false,\n            \"reasonType\": \"MESSAGE CONTAINS UNDESIRABLE CONTENT\"\n        }\n    ]\n}"
 						},
 						"url": {
-							"raw": "api.services.mimecast.com/api/gateway/hold-reject",
+							"raw": "https://api.services.mimecast.com/api/gateway/hold-reject",
 							"host": [
 								"api",
 								"services",
@@ -1471,7 +1471,7 @@
 							"raw": "{\n  \"data\": [\n    {\n      \"id\": \"[Your Mimecast secure id]\"\n    }\n  ]\n}"
 						},
 						"url": {
-							"raw": "api.services.mimecast.com/api/gateway/hold-release",
+							"raw": "https://api.services.mimecast.com/api/gateway/hold-release",
 							"host": [
 								"api",
 								"services",
@@ -1503,7 +1503,7 @@
 							"raw": "{\n  \"data\": [\n    {\n      \"id\": \"[Your secure ID]\"\n    }\n  ]\n}"
 						},
 						"url": {
-							"raw": "api.services.mimecast.com/api/gateway/message/get-file",
+							"raw": "https://api.services.mimecast.com/api/gateway/message/get-file",
 							"host": [
 								"api",
 								"services",
@@ -1536,7 +1536,7 @@
 							"raw": "{}"
 						},
 						"url": {
-							"raw": "api.services.mimecast.com/api/journaling/get-service",
+							"raw": "https://api.services.mimecast.com/api/journaling/get-service",
 							"host": [
 								"api",
 								"services",
@@ -1568,7 +1568,7 @@
 							"raw": "{\n  \"data\": [\n    {\n      \"action\": \"[Choose to either 'permit' or 'block']\",\n      \"sender\": \"[Sender's email address]\",\n      \"to\": \"[Recipient's email address]\"\n    }\n  ]\n}"
 						},
 						"url": {
-							"raw": "api.services.mimecast.com/api/managedsender/permit-or-block-sender",
+							"raw": "https://api.services.mimecast.com/api/managedsender/permit-or-block-sender",
 							"host": [
 								"api",
 								"services",
@@ -1600,7 +1600,7 @@
 							"raw": "{\n  \"data\": [\n    {\n      \"id\": \"[Your Mimecast ID]\"\n    }\n  ]\n}"
 						},
 						"url": {
-							"raw": "api.services.mimecast.com/api/message-finder/get-message-info",
+							"raw": "https://api.services.mimecast.com/api/message-finder/get-message-info",
 							"host": [
 								"api",
 								"services",
@@ -1632,7 +1632,7 @@
 							"raw": "{\n  \"data\": [\n    {\n      \"advancedTrackAndTraceOptions\": {\n        \"from\": \"[Sending email address or domain]\",\n        \"senderIP\": \"[Source IP address]\",\n        \"subject\": \"[Subject]\",\n        \"to\": \"[Recipient email address or domain]\",\n        \"url\": \"[URL from email content]\",\n        \"attachments\": [true or false],\n        \"end\": \"[Latest message date and time]\",\n        \"messageId\": \"[Internet message ID]\",\n        \"route\": [\"route values\"],\n        \"searchReason\": \"[Reason for Tracking]\",\n        \"start\": \"[Earliest message date and time]\",\n        \"status\": [\"email status values\"]\n      }\n    }\n  ]\n}"
 						},
 						"url": {
-							"raw": "api.services.mimecast.com/api/message-finder/search",
+							"raw": "https://api.services.mimecast.com/api/message-finder/search",
 							"host": [
 								"api",
 								"services",
@@ -1664,7 +1664,7 @@
 							"raw": "{\n  \"data\": [\n    {\n      \"url\": \"[Mimecast encoded URL]\"\n    }\n  ]\n}"
 						},
 						"url": {
-							"raw": "api.services.mimecast.com/api/ttp/url/decode-url",
+							"raw": "https://api.services.mimecast.com/api/ttp/url/decode-url",
 							"host": [
 								"api",
 								"services",
@@ -1702,7 +1702,7 @@
 							"raw": "{\n  \"data\": [\n    {\n      \"description\": \"[Name of Address Alteration Set]\",\n      \"parentId\": \"[Mimecast secure id of existing alteration set]\"\n    }\n  ]\n}"
 						},
 						"url": {
-							"raw": "api.services.mimecast.com/api/policy/address-alteration/create-address-alteration-set",
+							"raw": "https://api.services.mimecast.com/api/policy/address-alteration/create-address-alteration-set",
 							"host": [
 								"api",
 								"services",
@@ -1735,7 +1735,7 @@
 							"raw": "{\n  \"data\": [\n    {\n      \"addressAlterations\": [\n        {\n          \"folderId\": \"[Mimecast secure id of Address Alteration Set]\",\n          \"definitionName\": \"[Address Alteration Definition Name]\",\n          \"matchExpression\": \"[Match Expression]\",\n          \"replacementExpression\": \"[Replacement Expression]\"\n        }\n      ]\n    }\n  ]\n}"
 						},
 						"url": {
-							"raw": "api.services.mimecast.com/api/policy/address-alteration/create-definition",
+							"raw": "https://api.services.mimecast.com/api/policy/address-alteration/create-definition",
 							"host": [
 								"api",
 								"services",
@@ -1768,7 +1768,7 @@
 							"raw": "{\n  \"data\": [\n    {\n      \"addressAlterationSetId\": \"[Mimecast secure id of Address Alteration Set]\",\n      \"policy\": {\n        \"bidirectional\": [true or false],\n        \"comment\": \"[Policy Comment]\",\n        \"conditions\": {\n          \"description\": \"[Conditions Description]\",\n          \"enabled\": [true or false],\n          \"enforced\": [true or false],\n          \"from\": {\n            \"fromDate\": \"[Start Date]\",\n            \"fromEternal\": [true or false],\n            \"fromPart\": \"[From Part]\",\n            \"override\": [true or false]\n          },\n          \"to\": {\n            \"toDate\": \"[End Date]\",\n            \"toEternal\": [true or false]\n          }\n        }\n      }\n    }\n  ]\n}"
 						},
 						"url": {
-							"raw": "api.services.mimecast.com/api/policy/address-alteration/create-policy",
+							"raw": "https://api.services.mimecast.com/api/policy/address-alteration/create-policy",
 							"host": [
 								"api",
 								"services",
@@ -1801,7 +1801,7 @@
 							"raw": "{\n  \"data\": [\n    {\n      \"id\": \"[Mimecast secure id of Address Alteration Definition]\"\n    }\n  ]\n}"
 						},
 						"url": {
-							"raw": "api.services.mimecast.com/api/policy/address-alteration/delete-definition",
+							"raw": "https://api.services.mimecast.com/api/policy/address-alteration/delete-definition",
 							"host": [
 								"api",
 								"services",
@@ -1834,7 +1834,7 @@
 							"raw": "{\n  \"data\": [\n    {\n      \"id\": \"[Mimecast secure id of Address Alteration Policy]\"\n    }\n  ]\n}"
 						},
 						"url": {
-							"raw": "api.services.mimecast.com/api/policy/address-alteration/delete-policy",
+							"raw": "https://api.services.mimecast.com/api/policy/address-alteration/delete-policy",
 							"host": [
 								"api",
 								"services",
@@ -1867,7 +1867,7 @@
 							"raw": "{\n  \"data\": [\n    {\n      \"depth\": 1,\n      \"folderId\": \"[Mimecast secure id of Address Alteration Set]\"\n    }\n  ]\n}"
 						},
 						"url": {
-							"raw": "api.services.mimecast.com/api/policy/address-alteration/get-address-alteration-set",
+							"raw": "https://api.services.mimecast.com/api/policy/address-alteration/get-address-alteration-set",
 							"host": [
 								"api",
 								"services",
@@ -1900,7 +1900,7 @@
 							"raw": "{\n  \"data\": [\n    {\n      \"folderId\": \"[Folder ID]\",\n      \"newAddress\": \"[New Address]\",\n      \"originalAddress\": \"[Original Address]\",\n      \"routing\": \"[Routing]\"\n    }\n  ]\n}"
 						},
 						"url": {
-							"raw": "api.services.mimecast.com/api/policy/address-alteration/get-definition",
+							"raw": "https://api.services.mimecast.com/api/policy/address-alteration/get-definition",
 							"host": [
 								"api",
 								"services",
@@ -1933,7 +1933,7 @@
 							"raw": "{\n  \"data\": [\n    {\n      \"id\": \"[Mimecast secure id of policy]\"\n    }\n  ]\n}"
 						},
 						"url": {
-							"raw": "api.services.mimecast.com/api/policy/address-alteration/get-policy",
+							"raw": "https://api.services.mimecast.com/api/policy/address-alteration/get-policy",
 							"host": [
 								"api",
 								"services",
@@ -1966,7 +1966,7 @@
 							"raw": "{\n  \"data\": [\n    {\n      \"addressAlterationSetId\": \"[Mimecast secure id of Address Alteration Set]\",\n      \"id\": \"[Mimecast secure id of policy]\",\n      \"policy\": {\n        \"bidirectional\": false,\n        \"comment\": \"\",\n        \"conditions\": {},\n        \"description\": \"\",\n        \"enabled\": true,\n        \"enforced\": false,\n        \"from\": {},\n        \"fromDate\": \"\",\n        \"fromEternal\": true,\n        \"fromPart\": \"envelope_from\",\n        \"override\": false,\n        \"to\": {},\n        \"toDate\": \"\",\n        \"toEternal\": true\n      }\n    }\n  ]\n}"
 						},
 						"url": {
-							"raw": "api.services.mimecast.com/api/policy/address-alteration/update-policy",
+							"raw": "https://api.services.mimecast.com/api/policy/address-alteration/update-policy",
 							"host": [
 								"api",
 								"services",
@@ -1999,7 +1999,7 @@
 							"raw": "{\n  \"data\": [\n    {\n      \"option\": \"[policy action]\",\n      \"policy\": {\n        \"bidirectional\": false,\n        \"comment\": \"\",\n        \"conditions\": {},\n        \"description\": \"\",\n        \"enabled\": true,\n        \"enforced\": false,\n        \"from\": {},\n        \"fromDate\": \"\",\n        \"fromEternal\": true,\n        \"fromPart\": \"envelope_from\",\n        \"override\": false,\n        \"to\": {},\n        \"toDate\": \"\",\n        \"toEternal\": true\n      }\n    }\n  ]\n}"
 						},
 						"url": {
-							"raw": "api.services.mimecast.com/api/policy/antispoofing-bypass/create-policy",
+							"raw": "https://api.services.mimecast.com/api/policy/antispoofing-bypass/create-policy",
 							"host": [
 								"api",
 								"services",
@@ -2031,7 +2031,7 @@
 							"raw": "{\n  \"data\": [\n    {\n      \"id\": \"[Mimecast secure id of existing policy]\"\n    }\n  ]\n}"
 						},
 						"url": {
-							"raw": "api.services.mimecast.com/api/policy/antispoofing-bypass/delete-policy",
+							"raw": "https://api.services.mimecast.com/api/policy/antispoofing-bypass/delete-policy",
 							"host": [
 								"api",
 								"services",
@@ -2064,7 +2064,7 @@
 							"raw": "{\n  \"data\": [\n    {\n      \"id\": \"[Mimecast secure id of existing policy]\"\n    }\n  ]\n}"
 						},
 						"url": {
-							"raw": "api.services.mimecast.com/api/policy/antispoofing-bypass/get-policy",
+							"raw": "https://api.services.mimecast.com/api/policy/antispoofing-bypass/get-policy",
 							"host": [
 								"api",
 								"services",
@@ -2097,7 +2097,7 @@
 							"raw": "{\n  \"data\": [\n    {\n      \"id\": \"[Mimecast secure id of existing policy]\",\n      \"option\": \"[policy action]\",\n      \"policy\": {\n        \"bidirectional\": [true or false],\n        \"comment\": \"[comment]\",\n        \"conditions\": {\n          \"headerFromDomain\": \"[headerFromDomain]\",\n          \"subjectContains\": \"[subjectContains]\",\n          \"messageSizeGreaterThanOrEqual\": [messageSizeGreaterThanOrEqual]\n        },\n        \"description\": \"[description]\",\n        \"enabled\": [true or false],\n        \"enforced\": [true or false],\n        \"from\": {\n          \"address\": \"[sender email address]\"\n        },\n        \"fromDate\": \"[fromDate]\",\n        \"fromEternal\": [true or false],\n        \"fromPart\": \"[envelope_from, header_from, or both]\",\n        \"override\": [true or false],\n        \"to\": {\n          \"address\": \"[recipient email address]\"\n        },\n        \"toDate\": \"[toDate]\",\n        \"toEternal\": [true or false]\n      }\n    }\n  ]\n}"
 						},
 						"url": {
-							"raw": "api.services.mimecast.com/api/policy/antispoofing-bypass/update-policy",
+							"raw": "https://api.services.mimecast.com/api/policy/antispoofing-bypass/update-policy",
 							"host": [
 								"api",
 								"services",
@@ -2130,7 +2130,7 @@
 							"raw": "{\n  \"data\": [\n    {\n      \"option\": \"no_action\",\n      \"policy\": {\n        \"bidirectional\": false,\n        \"comment\": \"Sample Blocked Sender Policy\",\n        \"conditions\": {},\n        \"description\": \"Sample Blocked Sender Policy\",\n        \"enabled\": true,\n        \"enforced\": false,\n        \"from\": {\n          \"fromPart\": \"envelope_from\"\n        },\n        \"to\": {\n          \"toEternal\": true\n        }\n      }\n    }\n  ]\n}"
 						},
 						"url": {
-							"raw": "api.services.mimecast.com/api/policy/blockedsenders/create-policy",
+							"raw": "https://api.services.mimecast.com/api/policy/blockedsenders/create-policy",
 							"host": [
 								"api",
 								"services",
@@ -2163,7 +2163,7 @@
 							"raw": "{\n  \"data\": [\n    {\n      \"id\": \"[Mimecast ID of blocked sender policy]\"\n    }\n  ]\n}"
 						},
 						"url": {
-							"raw": "api.services.mimecast.com/api/policy/blockedsenders/get-policy",
+							"raw": "https://api.services.mimecast.com/api/policy/blockedsenders/get-policy",
 							"host": [
 								"api",
 								"services",
